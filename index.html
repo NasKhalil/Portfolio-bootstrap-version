@@ -8,9 +8,9 @@
     <script src="/Bootstrap/js/bootstrap.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="50" class="scrollspy-example" tabindex="0">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="nav-scroll" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">My LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#hedline-section">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about-section">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@
     </nav>
   </header>
   <main>
-    <section class="headline d-flex flex-column justify-content-center mt-5 ms-5 min-vh-100" style="background:url(./Media/header-bg.png) no-repeat; background-size: contain;">
+    <section id="hedline-section" class="headline d-flex flex-column justify-content-center mt-5 ms-5 min-vh-100" style="background:url(./Media/header-bg.png) no-repeat; background-size: contain;">
       <h1 class="ms-5">I’m Alexandra <br>
         Glad to see you!</h1>
       <p class="ms-5"style="max-width: 906px;">I’m a software developer! I can help you build a product , 
@@ -160,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutme card mt-5">
+    <section id="about-section" class="aboutme card mt-5">
       <div class="row g-0 d-flex flex-row">
       <div class="col-lg-4">
         <h1 class="m-5">About <br>
@@ -218,7 +218,7 @@
       </div>
     </div>
     </section>
-    <section class="contact-me bg-primary" style="background-image: url(./Media/contact-form-background-desktop.png); background-repeat: no-repeat; background-size: contain;">
+    <section id="contact-section" class="contact-me bg-primary" style="background-image: url(./Media/contact-form-background-desktop.png); background-repeat: no-repeat; background-size: contain;">
       <div class="mx-auto d-flex flex-column justify-content-center align-items-center" style="height:577px; width: 700px;">
         <h2 class="text-white">
             Contact me
